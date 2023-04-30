@@ -1,0 +1,272 @@
+There are many players on OGS with cool formatting on their profile pages ([me](https://online-go.com/user/view/1322475), [yebellz](https://online-go.com/player/76618), and many more I can't be bothered to find), but I haven't seen any guides on how to do it. So, I suppose this is the first one.
+
+Always remember to close your tags!
+
+<h1>Part 1: Font</h1>
+This part will show you how to change the font size, formatting, color, and the font. <br>
+<br>
+
+[details="Font Size"]
+<h2>Font Size</h2>
+
+You can change the font size with the following tags:
+   
+    <p style="font-size:20px;">Your Text Here</p>
+
+16px is about the size of most text. You can change it to whatever pixel size you want. It may take a bit of trial and error. Replace "Your Text Here" with whatever you want to change the font size of. This only works on your profile, however, not on the forums.
+
+Alternatively, you could use big and small tags. These work on the forums as well as your profile. They look like this
+
+    <big>Big Text</big>
+    <small>Small Text</small>
+They will look like this:
+
+<big>Big Text</big>
+<small>Small Text</small>
+
+
+If you want to make your text even smaller or bigger, you can nest small or big tags, like this:
+
+    <small><small><small>Really Tiny Text</small></small></small>
+
+which will look like this:
+
+<small><small><small>Really Tiny Text</small></small></small>
+
+Nesting Big tags only works on profile not on the forums. Nesting Small tags works on both.
+
+[/details]
+
+
+
+[details="Headers"]
+<h2>Headers</h2>
+
+Headers make your font bigger and bold, like a header. There are 6 sizes of header:
+
+    <h1>Header 1</h1>
+    <h2>Header 2</h2>
+    <h3>Header 3</h3>
+    <h4>Header 4</h4>
+    <h5>Header 5</h5>
+    <h6>Header 6</h6>
+which get smaller and smaller, like this:
+
+<h1>Header 1</h1>
+<h2>Header 2</h2>    
+<h3>Header 3</h3>    
+<h4>Header 4</h4>    
+<h5>Header 5</h5>
+<h6>Header 6</h6>
+
+
+[/details]
+
+[details="Font Tags (bold, italic, etc)"]
+<h2>Font Tags</h2>
+Here are some font formatting tags you can use:
+
+    <b>Bold Text</b>
+    <i>Italic Text</i>
+    <u>Underlined Text</u>
+    <strike>Strikethrough Text</strike>
+    <mark>Highlighted Text</mark>
+
+   <b>Bold Text</b>
+   <i>Italic Text</i>
+   <u>Underlined Text</u>
+   <strike>Strikethrough Text</strike>
+<mark>Highlighted Text</mark> (doesn't work on forums)
+
+
+[/details]
+
+[details="Font Color"]
+To change the color of a font, use this tag:
+
+    <p style="color:green;">This text is green.</p>
+    <p style="color:skyblue;">This text is sky blue.</p>
+    <p style="color:crimson;">This text is crimson.</p>
+    <p style="color:gold;">This text is gold.</p>
+
+This doesn't work on forums, though, only on profile. Here is a screenshot of what it looks like on my profile:
+![image|162x146](upload://ugEWQZpKLCbuah1XpOKrm48md5X.png)
+
+[Here is a list of colors you can use.](https://www.w3schools.com/colors/colors_hex.asp)
+
+[/details]
+
+[details="Fonts"]
+You can change the actual font of the text with these tags:
+ 
+    <p style="font-family:'Arial'">Arial: The quick brown fox jumps over the lazy dog.</p>
+    <p style="font-family:'Comic Sans MS'">Comic Sans MS: The quick brown fox jumps over the lazy dog.</p>
+    <p style="font-family:'Trebuchet MS'">Trebuchet MS: The quick brown fox jumps over the lazy dog.</p>
+    <p style="font-family:'Verdana'">Verdana: The quick brown fox jumps over the lazy dog.</p>
+    <p style="font-family:'Georgia'">Georgia: The quick brown fox jumps over the lazy dog.</p>
+    <p style="font-family:'Times New Roman'">Times New Roman: The quick brown fox jumps over the lazy dog.</p>
+    <p style="font-family:'Courier New'">Courier New: The quick brown fox jumps over the lazy dog.</p>
+    <p style="font-family:'Webdings'">Webdings: The quick brown fox jumps over the lazy dog.</p>
+    <p style="font-family:'Wingdings'">Wingdings: The quick brown fox jumps over the lazy dog.</p>
+
+
+Again, this doesn't work on forums, so here is a screenshot:
+
+![image|690x316, 75%](upload://78zfqfXqQVkmD9FaWtDYyszdX2W.png)
+
+
+[/details]
+
+<h1>Part 2: Embedding</h1>
+
+This part will show you how to embed an image, audio, YouTube video, GIF, or other media.
+
+[details="Images and GIFs"]
+<h2>Images and GIFs</h2>
+How to embed images and GIFs:
+Step 1: Right-click on the image or GIF and click Open image in new tab
+
+![image|394x294, 75%](upload://swLdVKGSg7BzPZY03PeQuRJY0aU.png)
+Then copy the URL into this tag:
+
+    <img src="imageurl">
+so if the image is https://example.com/image.png, you would say
+
+    <img src="https://example.com/image.png">
+
+Rescaling:
+
+    <img src="https://example.com/image.png" width=480 height=480>
+
+Rescale the width and height of your image.
+
+[/details]
+
+
+[details="Youtube Video"]
+<h2>Embedding a YouTube Video</h2>
+
+Take the URL of the video you want to embed, and put it into this tag:
+
+   <embed src="https://youtube.com/embed/videocode"></embed>
+
+You can again change the width and height:
+
+    <embed src="https://youtube.com/embed/videocode"></embed>
+
+So if the YouTube video URL was https://www.youtube.com/watch?v=dQw4w9WgXcQ, you would say:
+
+    <embed src="https://youtube.com/embed/dQw4w9WgXcQ"></embed>
+[/details]
+
+
+[details="Audio"]
+<h2>Embedding an Audio File</h2>
+
+You need a GMail account to do this. If you don't have a GMail account, then you can just embed a YouTube video.
+
+Step 1: Download the audio file
+
+Once you've done that:
+Step 2: go to https://drive.google.com
+
+Step 3: Click New - File Upload
+![Screen Shot 2020-10-11 at 1.27.47 PM|331x438, 50%](upload://c3qIbvYIzeEQdgEd8TN6U7GpTC9.png) 
+
+Upload your audio file
+
+![Screen Shot 2020-10-11 at 1.28.46 PM|690x417, 50%](upload://3Zn26VUoW7eIfHjsK1SCO9E8wsz.png) 
+
+Once it is uploaded, right click on it and click Get link
+
+![Screen Shot 2020-10-11 at 1.30.24 PM|361x500, 50%](upload://cGdx6cd14NJGcGFkoWWxQVGG5q0.png) 
+
+Change to Anyone with the link, Copy the link, and then press Done.
+
+![Screen Shot 2020-10-11 at 1.33.18 PM|654x439, 50%](upload://53coKnEWqF8b6dYQOaqrMfyzKK7.png) 
+Paste the link into this:
+
+    <embed src="AudioFileLink" width="320" height="64"></embed>
+
+If my link was https://drive.google.com/file/d/1ysG_DnPLSbKpMIKIfPovwQowVI8fqCO0/view, it would be 
+
+    <embed src="https://drive.google.com/file/d/1ysG_DnPLSbKpMIKIfPovwQowVI8fqCO0/view" width="320" height="64"></embed>
+
+[/details]
+
+
+[details="Other Media"]
+Some other media allow you to embed them. Say you wanted to embed [this pandemic simulator I made](https://www.desmos.com/calculator/h1raxvhsb9). You can embed that by saying:
+
+    <embed src="YourLinkHere"></embed>
+
+You can also use the same width and height adjustment method as demonstrated in Images and GIFs.
+
+Some things also have an Embed option. HOWEVER, USING IFRAME TAGS DOES NOT WORK. REPLACE WHERE IT SAYS IFRAME WITH EMBED.  Otherwise it will not work.
+
+Like this:
+   
+    <embed src="https://www.desmos.com/calculator/h1raxvhsb9?embed" width="1000px" height="1000px" style="border: 1px solid #ccc" frameborder=0></embed>
+
+[/details]
+
+<h1>Part 3: Miscellaneous Other Tips</h1>
+
+This part shows some other things you can do.
+
+
+[details="Separator lines"]
+These are lines that seperate things.
+
+What you do:
+
+    Part 1
+    
+    ----
+    Part 2
+
+This makes this:
+
+Part 1
+
+----
+Part 2
+[/details]
+
+
+[details="Links"]
+<h2>How to make links</h2>
+
+Use the A tag to make links.
+
+    <a href="https://online-go.com/player/580662">My OGS Profile</a>
+which ends up making a Link, like this:
+
+  <a href="https://online-go.com/player/580662">My OGS Profile</a>
+
+
+[/details]
+
+
+[details="Hiding Details (like this!)"]
+<h2>How to Hide Details:</h2>
+
+    <details><summary>Summary Text</summary>Hidden Text</details>
+
+This comes out like this:
+
+ <details><summary>Summary Text</summary>Hidden Text</details>
+[/details]
+
+
+[details="A Visitor Counter"]
+Here is a good visitor counter. You can follow the directions yourself.
+http://flagcounter.com/
+
+[/details]
+
+Those are most of the things you can do within your profile page. You can do some other things, such as cross-referencing CSS to get the style of the whole page, not just your profile field, but I do not know how to do that. You can ask yebellz about that.
+
+<small>Also, younger Starline, this is the guide you spent hours looking for. </small>
+
+If you need any help with anything listed here, or want to embed an audio but don't have a Gmail account, you can message me. I'm not a moderator so I can't change your profiles directly, but I can tell you what to put in it.
